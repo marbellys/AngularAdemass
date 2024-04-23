@@ -7,8 +7,7 @@ import { CommonModule } from '@angular/common';
 interface Tarjeta{
   titulo:string;
   subtitulo:string;
-  nro?:number; //declara la propiedad de tipo nulla, si se necesita
-               // se coloca pero ino , no da error
+  imagen:string; 
 }
 
 @Component({
@@ -24,10 +23,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.ArregloTarjetas = [
-      {titulo:'video 1', subtitulo:'subtitulo video1',nro:1},
-      {titulo:'video 2', subtitulo:'subtitulo video2',nro:2},
-      {titulo:'video 3', subtitulo:'subtitulo video3'},
-      {titulo:'video 4', subtitulo:'subtitulo video4'},
+      {titulo:'video 1', subtitulo:'subtitulo video1',imagen:"https://images.pexels.com/photos/18129528/pexels-photo-18129528/free-photo-of-mujer-modelo-maqueta-joven.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"},
+      {titulo:'video 2', subtitulo:'subtitulo video2',imagen:"https://images.pexels.com/photos/20888053/pexels-photo-20888053/free-photo-of-kleinhorn-rosenlaui-suiza.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+      {titulo:'video 3', subtitulo:'subtitulo video3',imagen:"https://images.pexels.com/photos/19057526/pexels-photo-19057526/free-photo-of-paisaje-naturaleza-campo-campos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+      {titulo:'video 4', subtitulo:'subtitulo video4',imagen:"https://images.pexels.com/photos/16499257/pexels-photo-16499257/free-photo-of-noche-adolescente-nino-chico.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
           ]   
   }
 }

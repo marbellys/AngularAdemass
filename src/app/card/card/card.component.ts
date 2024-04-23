@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  public image: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-eg8PQLROZGgiy0FP33LPJ-NbW7PfYfgFUA&s";
-  public Titulo:string= "Curso de angular con Interpolacion";
+  /* public imagen: string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-eg8PQLROZGgiy0FP33LPJ-NbW7PfYfgFUA&s";
+  public Titulo:string= "Curso de angular con Interpolacion"; */
+
+  @Input() dataEntrante:any;
+
   constructor(){}
 
   ngOnInit():void{
