@@ -3,6 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card/card.component';
 import { CommonModule } from '@angular/common';
+import { ComponentedosComponent } from './componentedos/componentedos.component';
+import { ComponenteunoComponent } from './componenteuno/componenteuno.component';
+
+
 
 interface Tarjeta{
   titulo:string;
@@ -13,7 +17,8 @@ interface Tarjeta{
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderComponent,CardComponent,CommonModule],
+  imports: [RouterOutlet,HeaderComponent,CardComponent,
+    CommonModule,ComponenteunoComponent,ComponentedosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
